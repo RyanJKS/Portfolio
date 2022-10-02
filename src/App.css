@@ -1,0 +1,275 @@
+:root {
+  --bodyColor : #373737;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+  z-index: 1;
+}
+
+body {
+  background-color: var(--bodyColor);
+}
+
+@media screen and (max-width: 768px) {
+  body { padding-top: 0px; }
+}
+
+/* NAVBAR*/
+.micContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: aqua;
+  z-index: 2;
+  background-color: var(--bodyColor);
+}
+
+.micBtn {
+  height: 5vh;
+}
+
+
+/* STOCKS WATCHLIST*/
+.searchBar{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.chartContainer{
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stocksOverview{
+  background-color: var(--bodyColor);
+  color: aqua;
+  box-shadow: 5px 10px;
+}
+
+
+.chartSelectButton{
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+  align-items: center;
+}
+.chartPagePosition{
+  display: flex;
+  height: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* SUDOKU */
+.movesPos{
+  padding: 1rem;
+  justify-content: center;
+}
+
+.sudokuTile {
+  padding: 0px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sudokuBoard {
+  height: 80vh;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.sudokuTableBoard {
+  border-collapse: collapse;
+  border: 3px solid black;
+  background-color: grey;
+}
+
+td {
+  padding: 0;
+}
+
+.rowBorderColor {
+  border-bottom: 2px solid black;
+}
+
+.colBorderColor {
+  border-right: 2px solid black;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+/*NEWS*/
+
+.cardSource{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  flex-direction: column;
+  padding: 2px;
+  height: 20vh;
+  overflow:hidden;
+}
+
+.introPageTile{
+  margin: 3rem;
+}
+
+.introPageContainer {
+  padding: 0 5%;
+  width: 100%;
+  margin: 0;
+}
+
+.introCard {
+  display: flex;
+  flex: column;
+  text-align: center;
+}
+
+.introCardContext{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  padding: 10%;
+  border-radius: 2%;
+  color: aqua;
+  background-color: #373737;
+  box-shadow: 10px 10px lightblue;
+}
+
+.weatherImages{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.myclass > li > a {
+  color: aqua
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.JKS {
+  font-family: 'Dancing Script', cursive;
+}
+
+.homePage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  justify-content: space-evenly;
+  color: aqua;
+  background-color: var(--bodyColor);
+}
+
+.homeNotes {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+.sudokuPageContainer{
+  display: flex;
+  height: 105vh;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: var(--bodyColor);
+}
+
+.sudokuOverview {
+  background-color: var(--bodyColor);
+  color: aqua;
+  box-shadow: 5px 10px;
+}
+
+.fixedNav {
+  z-index: 4;
+}
+
+.newsPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.newsSubject {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.newsOverview{
+  background-color: var(--bodyColor);
+  color: aqua;
+  box-shadow: 5px 10px;
+}
+
+.robotPageContainer {
+  background-color: var(--bodyColor);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.robotPageContent {
+  display: flex;
+  padding-inline: 100px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutPageContainer{
+  background-color: var(--bodyColor);
+  color: white;
+  height: 90vh;
+}
+
+.aboutPageContent {
+  display: flex;
+  padding-inline: 80px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactPageContainer{
+  display: flex;
+  background-color: var(--bodyColor);
+  color: white;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
