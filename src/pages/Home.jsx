@@ -19,7 +19,7 @@ function Home() {
         <br/>
         The icon will change which shows that the device is "listening" and then try saying: Open "Sudoku"
         <br/>
-        To access other pages, try saying Open or Go to: "Home", "News", "Stocks", "Robot", "About"
+        To access other pages, try saying Open or Go to: "Home", "News", "Stocks", "Robot", "About", "Contact"
         <br/>
         <br/>
         Please press the <em> Microphone Button</em> again after issueing a command so that the device "stops listening".

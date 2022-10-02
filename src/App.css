@@ -251,7 +251,7 @@ td {
 .aboutPageContainer{
   background-color: var(--bodyColor);
   color: white;
-  height: 90vh;
+  height: 100vh;
 }
 
 .aboutPageContent {

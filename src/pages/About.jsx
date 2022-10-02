@@ -66,6 +66,7 @@ function About() {
               <li>Programming languages: Python, Javascript, C</li>
               <li>Front-end: HTML, CSS, ReactJS, Bootstrap, Material UI</li>
               <li>Back-end: NodeJS</li>
+              <li>DevOps: AWS, Heroku, GitHub Actions, CI/CD</li>
               <li>Data Sharing: GIT</li>
             </ul>
           </h5>
