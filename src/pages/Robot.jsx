@@ -36,7 +36,7 @@ function Robot() {
           The components used and a wiring diagram are shown below.
         </h6>
         <br/>
-        <img src={require("../RobotComponents/electrical circuit.PNG")} alt="Electrical Circuit" width="80%"/>
+        <img src={require("../RobotComponents/electrical circuit.PNG")} alt="Electrical Circuit" width="90%"/>
         <br/>
         <img src={require("../RobotComponents/wiring diagram.png")} alt="Electrical Circuit Diagram" width="80%" />
         <br/>
