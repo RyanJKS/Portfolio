@@ -5,7 +5,7 @@ import Board from '../sudokuComponents/Board';
 
 
 function Sudoku() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div className='sudokuPageContainer'>

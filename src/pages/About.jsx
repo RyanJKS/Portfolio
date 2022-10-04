@@ -3,7 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 
 function About() {
 
-  const carouselHeight = 150
+  const carouselHeight = "100vh"
   const items = [
     <img src={require('../AboutComponents/javascript-logo.jpg')} alt='Javascript Logo' height={carouselHeight} />,
     <img src={require('../AboutComponents/react-logo.png')} alt='react Logo' height={carouselHeight} />,
@@ -24,8 +24,8 @@ function About() {
   }
 
   return (
+    <div className='aboutPage'>
     <div className='aboutPageContainer'>
-      <div className='aboutPageContent'>
         <br/>
         <h1>About Me</h1>
         <br/>
@@ -67,10 +67,10 @@ function About() {
               <li>Front-end: HTML, CSS, ReactJS, Bootstrap, Material UI</li>
               <li>Back-end: NodeJS</li>
               <li>DevOps: AWS, Heroku, GitHub Actions, CI/CD</li>
-              <li>Data Sharing: GIT</li>
+              <li>Version Control: GIT</li>
             </ul>
           </h5>
-      </div>
+          </div>
     </div>
   )
 }

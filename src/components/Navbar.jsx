@@ -72,14 +72,12 @@ function NavBar() {
       setOpen(!open)
       if (visibility === false){
       SpeechRecognition.startListening()
-      console.log("Started Listening")
       } 
       else {
           SpeechRecognition.stopListening()
           resetTranscript()
           setRedirectURL("")
           setRedirectPage("")
-          console.log("Stopped Listening")
       }
     }
 

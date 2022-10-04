@@ -13,7 +13,7 @@ function Robot() {
           The device was first designed using CAD software (SOLIDWORKS), manufactured using laser cutting facilities and then assembled as shown below.
         </h6>
         <br/>
-        <img src={require('../RobotComponents/design.png')} alt='Design Pic' height={450} />
+        <img src={require('../RobotComponents/design.png')} alt='Design Pic' width="80%" />
         <br/>
         <h2> 
           Components
@@ -36,18 +36,18 @@ function Robot() {
           The components used and a wiring diagram are shown below.
         </h6>
         <br/>
-        <img src={require("../RobotComponents/electrical circuit.PNG")} alt="Electrical Circuit"/>
+        <img src={require("../RobotComponents/electrical circuit.PNG")} alt="Electrical Circuit" width="80%"/>
         <br/>
-        <img src={require("../RobotComponents/wiring diagram.png")} alt="Electrical Circuit Diagram" height={450}/>
+        <img src={require("../RobotComponents/wiring diagram.png")} alt="Electrical Circuit Diagram" width="80%" />
         <br/>
         <h6> The path it had to transverse through is shown below.</h6>
         <br/>
-        <img src={require("../RobotComponents/track2.png")} alt="Track"/>
+        <img src={require("../RobotComponents/track2.png")} alt="Track" width="80%"/>
         <br/>
         <h6> Here is a video of the final product in working order.</h6>
         <br/>
-        <video width="500" height="450" controls>
-          <source src={require("../RobotComponents/Robot Testing.mp4")} type="video/mp4"/>
+        <video width="80%" height="450" controls>
+          <source src={require("../RobotComponents/RobotTesting.mp4")} type="video/mp4"/>
         </video>
       </div>
     </div>

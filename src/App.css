@@ -17,7 +17,7 @@ body {
   body { padding-top: 0px; }
 }
 
-/* NAVBAR*/
+/**************** nAVBAR ******************/
 .micContainer {
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ body {
   bottom: 0;
   width: 100%;
   color: aqua;
-  z-index: 2;
+  z-index: 1;
   background-color: var(--bodyColor);
 }
 
@@ -35,62 +35,69 @@ body {
   height: 5vh;
 }
 
-
-/* STOCKS WATCHLIST*/
-.searchBar{
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
+.myclass > li > a {
+  color: aqua
 }
 
-.chartContainer{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.JKS {
+  font-family: 'Dancing Script', cursive;
+}
+
+.fixedNav {
+  z-index: 2;
+}
+
+/**************** HOME PAGE ******************/
+.homePage{
   display: flex;
-  height: 50vh;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  color: aqua;
+  background-color: var(--bodyColor);
+  width: 100%;
+  height: 95vh;
+  padding: 1rem;
 }
 
-.stocksOverview{
+.homeNotes {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+/**************** SUDOKU PAGE ******************/
+.sudokuPageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: var(--bodyColor);
+  padding: 1rem;
+}
+
+.sudokuOverview {
   background-color: var(--bodyColor);
   color: aqua;
   box-shadow: 5px 10px;
 }
 
-
-.chartSelectButton{
-  display: flex;
-  justify-content: center;
-  height: 7vh;
-  align-items: center;
-}
-.chartPagePosition{
-  display: flex;
-  height: 20vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* SUDOKU */
 .movesPos{
   padding: 1rem;
   justify-content: center;
 }
 
 .sudokuTile {
-  padding: 0px;
-  height: 60px;
-  width: 60px;
+  height: 5vh;
+  width: 5vh;
   text-align: center;
   font-size: 2rem;
 }
 
-.sudokuBoard {
-  height: 80vh;
-  padding: 0.5rem;
+.sudokuBoardBtn {
+  height: 70vh;
   margin: 0.5rem;
 }
 
@@ -98,6 +105,8 @@ body {
   border-collapse: collapse;
   border: 3px solid black;
   background-color: grey;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 td {
@@ -114,12 +123,84 @@ td {
 
 .btnContainer {
   display: flex;
+  width: 100vw;
   gap: 1rem;
   padding: 2rem;
   justify-content: center;
 }
 
-/*NEWS*/
+/**************** STOCKS PAGE ******************/
+.stocksOverview{
+  background-color: var(--bodyColor);
+  color: aqua;
+  box-shadow: 5px 10px;
+}
+
+.searchBar{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 80vw;
+}
+
+.chartContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.watchListTable {
+  margin-left:auto;
+  margin-right:auto;
+  width:100vw;
+  overflow:scroll;
+  overflow: hidden;
+}
+
+/**************** STOCKS CHART PAGE ******************/
+.chartPage {
+  margin-bottom: 5vh;
+  padding: 0.5rem;
+}
+
+.chartPagePosition{
+  display: flex;
+  height: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chartSelectButton{
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+  align-items: center;
+}
+
+/**************** NEWS PAGE ******************/
+.newsPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.newsSubject {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.newsOverview{
+  background-color: var(--bodyColor);
+  color: aqua;
+  box-shadow: 5px 10px;
+}
 
 .cardSource{
   display: flex;
@@ -170,70 +251,7 @@ td {
   width: 100%;
 }
 
-.myclass > li > a {
-  color: aqua
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
-.JKS {
-  font-family: 'Dancing Script', cursive;
-}
-
-.homePage{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  justify-content: space-evenly;
-  color: aqua;
-  background-color: var(--bodyColor);
-}
-
-.homeNotes {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px;
-}
-
-.sudokuPageContainer{
-  display: flex;
-  height: 105vh;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  background-color: var(--bodyColor);
-}
-
-.sudokuOverview {
-  background-color: var(--bodyColor);
-  color: aqua;
-  box-shadow: 5px 10px;
-}
-
-.fixedNav {
-  z-index: 4;
-}
-
-.newsPageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.newsSubject {
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-}
-
-.newsOverview{
-  background-color: var(--bodyColor);
-  color: aqua;
-  box-shadow: 5px 10px;
-}
-
+/**************** ROBOT PAGE ******************/
 .robotPageContainer {
   background-color: var(--bodyColor);
   color: white;
@@ -242,26 +260,31 @@ td {
 
 .robotPageContent {
   display: flex;
-  padding-inline: 100px;
+  padding: 1rem;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
+/**************** ABOUT PAGE ******************/
 .aboutPageContainer{
   background-color: var(--bodyColor);
   color: white;
-  height: 100vh;
-}
-
-.aboutPageContent {
+  margin-bottom: 2rem;
   display: flex;
-  padding-inline: 80px;
+  padding: 1rem;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  height: fit-content;
+  justify-content: space-evenly;
 }
 
+.aboutPage {
+  background-color: var(--bodyColor);
+  height: 95vh;
+}
+
+/**************** CONTACT PAGE ******************/
 .contactPageContainer{
   display: flex;
   background-color: var(--bodyColor);

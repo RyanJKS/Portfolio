@@ -18,7 +18,7 @@ function WatchList() {
         let allResponses = await axios.all(watchStock.map((stock) => 
         axiosInstance.get(`/crypto-quote/${stock}`,{cancelToken:cancelToken.token}
         )))
-        
+
         const dataStuff = allResponses.map((response)=> {
           return {
             symbol : response.data[0],
@@ -26,7 +26,7 @@ function WatchList() {
           }
         })
           setStockData(dataStuff)
-          console.log(dataStuff)
+        
       } catch (err) {
         if (axios.isCancel(err))
         console.log("cancelled!")
@@ -38,7 +38,7 @@ function WatchList() {
 
 
   return (
-    <div className='container-all'>
+    <div className='watchListTable'>
       <WatchListTable text={stockData}/> 
     </div>
   )

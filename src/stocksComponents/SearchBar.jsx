@@ -44,7 +44,6 @@ function SearchBar() {
         let responses = await axiosInstance.get(`/stock-lookup/${search}`)
         
         if (isMounted){
-          console.log(responses.data.result)
           setResults(responses.data.result)
         }
       } catch(err){

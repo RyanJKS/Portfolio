@@ -8,13 +8,14 @@ function Home() {
     <div className='homePage'>
     <Particle/>
     <h1>Jhelan Portfolio Website</h1>
-    <h4>Hi, I'm Jhelan and in this website, there are the projects that I made.</h4>
+    <h4>Hi, I'm Jhelan and an aspiring software engineer who wants to show you my projects.
+      </h4>
       <div className='homeNotes'>
       <p>
-        This website can be navigated fully using <strong> Speech Recognition</strong> and has responsive features which makes it suitable to be used on your phone.
+        This website can be navigated fully using <strong> Speech Recognition</strong> features and is responsive which makes it suitable to be used on your phone.
         <br/>
         <br/>
-        To use this feature, simply click on the <em>Microphone Button</em>, located at the middle-bottom of the page. 
+        To use the speech recognition feature, simply click on the <em>Microphone Button</em>, located at the middle-bottom of the page. 
         <br/>
         <br/>
         The icon will change which shows that the device is "listening" and then try saying: Open "Sudoku"

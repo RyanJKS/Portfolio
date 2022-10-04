@@ -16,8 +16,6 @@ function StocksChart() {
   const [chartData, setChartData] = useState(null)
   const [candleChartData, setCandleChartData]=useState()
 
-  const port = process.env.REACT_APP_PORT
-
   const formatData = (data) =>{
     
     return data.t.map((element,index) =>{
@@ -104,13 +102,13 @@ function StocksChart() {
   }
 
   return (
-    <>
+    <div className='chartPage'>
     <div className='chartPagePosition'>
       <h2>Welcome to Stocks Chart Page for {symbol}</h2>
       <Button onClick={()=>{navigate('/Stocks')}} variant="outlined">Go Back</Button>
     </div>
 
-    <div id='chartPosition' align="center">
+    <div align="center">
     {chartData ? <CheckGraph/> : null}
      
     </div>
@@ -119,7 +117,7 @@ function StocksChart() {
       <Button onClick={()=>{setTypeChart("Line Chart")}} variant={buttonSelect("Line Chart")} size="small">Line Chart</Button>
       <Button onClick={()=>{setTypeChart("Candlestick Chart")}} variant={buttonSelect("Candlestick Chart")} size="small">Candlestick Chart</Button>
     </div>
-    </>
+    </div>
   )
 }
 

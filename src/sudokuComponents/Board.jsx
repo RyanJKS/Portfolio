@@ -20,8 +20,6 @@ function Board() {
         
         setInitialGame(makeGridSudoku)
         setSudokuState(getPuzzle(makeGridSudoku))
-        
-        
     },[newGame])
 
     function getPuzzle(arr){
@@ -58,13 +56,16 @@ function Board() {
     }
     
     const handleSolve = ()=>{
-        let currentBoard = structuredClone(sudokuState)
-
-        if (validBoards(currentBoard)){
-            setSudokuState(solve(currentBoard))
+        if (countMoves !== 0){
+            let currentBoard = structuredClone(sudokuState)
+            if (validBoards(currentBoard)){
+                setSudokuState(solve(currentBoard))
+            } else {
+                alert("Not solved correctly. Try again please.")
+            }
         } else {
-            alert("Not solved correctly. Try again please.")
-        }
+            alert("Please input a puzzle before trying to solve the puzzle.")
+        }   
     }
 
     const handleClearBoard = () =>{
@@ -86,7 +87,7 @@ function Board() {
   return (
     <>
     <h3 className='movesPos'>Moves Count: {countMoves}</h3>
-    <div className='sudokuBoard'>
+    <div className='sudokuBoardBtn'>
         {sudokuState &&
         <table className='sudokuTableBoard'>
             <tbody>
@@ -99,7 +100,6 @@ function Board() {
                                 onChange={(e) => handleInput(e,row,col)} 
                                 value={sudokuState[row][col] === null?'':sudokuState[row][col]} 
                                 disabled={initialGame[row][col] !== null}
-                            
                                 className='sudokuTile' />
                             </td>
                             })} 

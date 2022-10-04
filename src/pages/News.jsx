@@ -101,12 +101,12 @@ const CheckSubject = () =>{
 
   return (
     <>
-    {showMeme ? <img src={showMeme} alt="Meme from API"/> :
+    {showMeme ? <img src={showMeme} alt="Meme from API" width="100%"/> :
     showNews ? <NewsInfoCard articles={showNews}/> :
     showWeather ? 
       <div className='weatherImages'>
-        <img src={showWeather} alt="weather for city"/>
-        <img src={require('../NewsComponents/weather-icon-def.PNG')} alt="weather icon definition"/>
+        <img src={showWeather} alt="weather for city" width="50%"/>
+        <img src={require('../NewsComponents/weather-icon-def.PNG')} alt="weather icon definition" width="50%"/>
       </div> :
       <IntroPage/>}
     </>
@@ -116,7 +116,7 @@ const CheckSubject = () =>{
 
 
 function News() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   return (
     <div className='newsPageContainer'>
@@ -129,7 +129,7 @@ function News() {
         </Button>
         <Collapse in={open}>
           <div id="collapse-text" className='newsOverview'>
-            In this project, I combined the use of <strong>Speech Recognition</strong> and pulling request from multiple <strong>API's</strong> to display data.
+            In this project, I combined the use of <strong>Speech Recognition</strong> and pulling request from multiple <strong> RESTful API's</strong> to display data.
             <br/>
             By using the <strong> Microphone Button</strong> at the middle-bottom of the screen, you can either find news, find a meme or find out about the weather in a city.
             <br/>
