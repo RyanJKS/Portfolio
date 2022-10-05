@@ -56,16 +56,12 @@ function Board() {
     }
     
     const handleSolve = ()=>{
-        if (countMoves !== 0){
-            let currentBoard = structuredClone(sudokuState)
-            if (validBoards(currentBoard)){
-                setSudokuState(solve(currentBoard))
-            } else {
-                alert("Not solved correctly. Try again please.")
-            }
+        let currentBoard = structuredClone(sudokuState)
+        if (validBoards(currentBoard)){
+            setSudokuState(solve(currentBoard))
         } else {
-            alert("Please input a puzzle before trying to solve the puzzle.")
-        }   
+            alert("Not solved correctly. Try again please.")
+        }
     }
 
     const handleClearBoard = () =>{
