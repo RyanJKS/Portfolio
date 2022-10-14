@@ -8,8 +8,8 @@ function Home() {
     <div className='homePage'>
     <Particle/>
     <h1>Jhelan Portfolio Website</h1>
-    <h4>Hi, I'm Jhelan and an aspiring software engineer who wants to show you my projects.
-      </h4>
+    <h4>Hi, I'm Jhelan. </h4> 
+    <h5>I am an aspiring software engineer who wants to show you my projects.</h5>
       <div className='homeNotes'>
       <p>
         This website can be navigated fully using <strong> Speech Recognition</strong> features and is responsive which makes it suitable to be used on your phone.

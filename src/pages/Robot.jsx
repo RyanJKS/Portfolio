@@ -36,13 +36,13 @@ function Robot() {
           The components used and a wiring diagram are shown below.
         </h6>
         <br/>
-        <img src={require("../RobotComponents/electrical circuit.PNG")} alt="Electrical Circuit" width="90%"/>
+        <img src={require("../RobotComponents/electrical circuit.PNG")} alt="Electrical Circuit" width="80%" style={{padding:"1rem"}}/>
         <br/>
-        <img src={require("../RobotComponents/wiring diagram.png")} alt="Electrical Circuit Diagram" width="80%" />
+        <img src={require("../RobotComponents/wiring diagram.png")} alt="Electrical Circuit Diagram" width="80%"/>
         <br/>
         <h6> The path it had to transverse through is shown below.</h6>
         <br/>
-        <img src={require("../RobotComponents/track2.png")} alt="Track" width="80%"/>
+        <img src={require("../RobotComponents/track2.png")} alt="Track" width="80%" height="80%"/>
         <br/>
         <h6> Here is a video of the final product in working order.</h6>
         <br/>
