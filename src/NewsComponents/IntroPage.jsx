@@ -6,7 +6,7 @@ export default function IntroPage() {
 
   const introCardsInfo = [
     {header:"Home Page", footer:"Try saying: Go back home"},
-    {header:"Finding News", footer: "Try saying: Show me the news about * ( where * can be anything)"},
+    {header:"Finding News", footer: "Try saying: Show me news about * ( where * can be anything)"},
     {header:"Finding about Weather", footer:"Try saying: What is the weather in *"},
     {header:"Finding Meme", footer: "Try saying: Show me a meme"},
   ]

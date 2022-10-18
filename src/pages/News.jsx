@@ -106,7 +106,7 @@ const CheckSubject = () =>{
     showWeather ? 
       <div className='weatherImages'>
         <img src={showWeather} alt="weather for city" width="50%"/>
-        <img src={require('../NewsComponents/weather-icon-def.PNG')} alt="weather icon definition" width="50%" height="auto"/>
+        <img src={require('../NewsComponents/weather-icon-def.PNG')} alt="weather icon definition" height="auto"/>
       </div> :
       <IntroPage/>}
     </>
