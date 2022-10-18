@@ -248,8 +248,10 @@ td {
 .weatherImages{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 50px;
-  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 /**************** ROBOT PAGE ******************/

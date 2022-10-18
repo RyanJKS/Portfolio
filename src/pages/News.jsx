@@ -137,6 +137,7 @@ function News() {
             <br/>
             <br/>
             <h6 style={{color:"red"}}>Note: Always come back to the Home Page after issueing a command before searching for another type of data</h6>
+            <h6 style={{color:"red"}}>****NEWS API LIMIT HAS BEEN EXCEEDED. Fetching news will not be possible until the 1st of November. I apologise for any inconvenience caused.</h6>
           </div>
         </Collapse>
         <div className='newsSubject'>
