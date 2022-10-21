@@ -18,12 +18,18 @@ function WatchList() {
         let allResponses = await axios.all(watchStock.map((stock) => 
         axiosInstance.get(`/crypto-quote/${stock}`,{cancelToken:cancelToken.token}
         )))
+        let resFilter = allResponses.filter(x => x.data.status !== 403)
+        if (resFilter.length !== allResponses.length && watchStock.length !== resFilter.length){
+          alert("You do not have access to this stock quote.")
+          watchStock.splice(-1)
+          localStorage.setItem("current",watchStock)
+        }
 
-        const dataStuff = allResponses.map((response)=> {
-          return {
-            symbol : response.data[0],
-            data : response.data[1]
-          }
+        const dataStuff = resFilter.map((response)=> {
+            return {
+              symbol : response.data[0],
+              data : response.data[1]
+            }
         })
           setStockData(dataStuff)
         
@@ -35,6 +41,7 @@ function WatchList() {
     getQuote()
     return () => {cancelToken.cancel()}
   },[watchStock])
+
 
 
   return (
