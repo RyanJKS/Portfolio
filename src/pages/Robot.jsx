@@ -44,11 +44,8 @@ function Robot() {
         <br/>
         <img src={require("../RobotComponents/track2.png")} alt="Track" width="80%" height="80%"/>
         <br/>
-        <h6> Here is a video of the final product in working order.</h6>
+        <h6> Click <a href='https://drive.google.com/file/d/1Dgbm3_bbPI3173o-HJm8yv8o35nO8WY2/view?usp=sharing' target="blank">here</a> to watch a video of the final product in working order.</h6>
         <br/>
-        <video width="80%" height="450" controls>
-          <source src={require("../RobotComponents/RobotTesting.mp4")} type="video/mp4"/>
-        </video>
       </div>
     </div>
   )

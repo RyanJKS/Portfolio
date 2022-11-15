@@ -65,7 +65,7 @@ function About() {
             <ul style={{listStyle:'none'}}>
               <li>Programming languages: Python, Javascript, C</li>
               <li>Front-end: HTML, CSS, ReactJS, Bootstrap, Material UI</li>
-              <li>Back-end: NodeJS</li>
+              <li>Back-end: NodeJS, ExpressJS, SQL, MongoDB</li>
               <li>DevOps: AWS, Heroku, GitHub Actions, CI/CD</li>
               <li>Version Control: GIT</li>
             </ul>
