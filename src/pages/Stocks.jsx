@@ -42,8 +42,6 @@ function Stocks() {
       </Button>
       <Collapse in={open}>
         <div id="example-collapse-text" className='stocksOverview'>
-          Please a few seconds intially before data are shown
-          <br/>
           In this project, I used an <em><strong>API</strong></em> to get data about stocks and plot them on either a line chart or candlestick chart.
           <br/>
           Simply enter a company's name or ticker symbol in the search bar and click on the choices presented.
